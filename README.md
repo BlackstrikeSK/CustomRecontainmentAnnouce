@@ -1,7 +1,7 @@
 # CustomRecontainmentAnnouce
 Ever wanted to change the annoucements when an SCP dies? You can do that!
 
-Description: Customize the annoucements when an SCP dies. Works with all reasons!
+Description: Customize the annoucements when an SCP dies. Works with all reasons of death!
 
 EXILED Version: 2.14.0
 
