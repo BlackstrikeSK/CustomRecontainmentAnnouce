@@ -1,6 +1,8 @@
 ﻿using System;
 using Exiled.API.Enums;
 using Exiled.API.Features;
+using Server = Exiled.Events.Handlers.Server;
+using Map = Exiled.Events.Handlers.Map;
 
 namespace CustomRecontainmentAnnouce
 {
@@ -16,6 +18,32 @@ namespace CustomRecontainmentAnnouce
 
         public static Plugin Instance => Singleton;
 
+        private Handlers.Server server;
+
+        public override void OnEnabled()
+        {
+            RegisterEvents();
+            base.OnEnabled();
+        }
+
+        public override void OnDisabled()
+        {
+            UnregisterEvents();
+            base.OnDisabled();
+        }
+
+        public void RegisterEvents()
+        {
+            server = new Handlers.Server();
+
+            Map.AnnouncingScpTermination += server.OnSCPTermination;
+        }
+
+        public void UnregisterEvents()
+        {
+            Map.AnnouncingScpTermination -= server.OnSCPTermination;
+            server = null;
+        }
 
     }
 }
