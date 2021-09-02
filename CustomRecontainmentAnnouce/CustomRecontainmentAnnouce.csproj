@@ -80,6 +80,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handlers\Server.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="PluginConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
