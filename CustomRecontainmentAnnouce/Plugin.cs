@@ -1,7 +1,6 @@
 ﻿using System;
 using Exiled.API.Enums;
 using Exiled.API.Features;
-using Server = Exiled.Events.Handlers.Server;
 using Map = Exiled.Events.Handlers.Map;
 
 namespace CustomRecontainmentAnnouce

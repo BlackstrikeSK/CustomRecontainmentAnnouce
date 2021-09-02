@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.ComponentModel;
 using Exiled.API.Interfaces;
 
 namespace CustomRecontainmentAnnouce
@@ -7,17 +7,23 @@ namespace CustomRecontainmentAnnouce
     {
         public bool IsEnabled { get; set; } = true;
 
-        // Unspecified Reason Message
-        public string SCP939MessageUn { get; set; } = "";
+        // Unspecified Reason Messages
+        [Description("SCP939 Message When Died Of UNSPECIFIED_REASON")]
+        public string SCP939MessageUn { get; set; } = "Unspecified";
 
-        public string SCP049MessageUn { get; set; } = "";
+        [Description("SCP049 Message When Died Of UNSPECIFIED_REASON")]
+        public string SCP049MessageUn { get; set; } = "Unspecified";
 
-        public string SCP096MessageUn { get; set; } = "";
+        [Description("SCP096 Message When Died Of UNSPECIFIED_REASON")]
+        public string SCP096MessageUn { get; set; } = "Unspecified";
 
-        public string SCP173MessageUn { get; set; } = "";
+        [Description("SCP173 Message When Died Of UNSPECIFIED_REASON")]
+        public string SCP173MessageUn { get; set; } = "Unspecified";
 
-        public string SCP106MessageUn { get; set; } = "";
+        [Description("SCP106 Message When Died Of UNSPECIFIED_REASON")]
+        public string SCP106MessageUn { get; set; } = "Unspecified";
 
-        public string SCP079MessageUn { get; set; } = "";
+        [Description("SCP079 Message When Died Of UNSPECIFIED_REASON")]
+        public string SCP079MessageUn { get; set; } = "Unspecified";
     }
 }
